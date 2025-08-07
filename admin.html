@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - User Messages</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            padding: 2rem;
+        }
+        #login-section, #message-section {
+            max-width: 600px;
+            margin: auto;
+            padding: 2rem;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background: #fff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        input, button {
+            display: block;
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+        }
+        .message-card {
+            border: 1px solid #ccc;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            background: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Login Section -->
+    <div id="login-section">
+        <h2>Admin Login</h2>
+        <input type="password" id="admin-password" placeholder="Enter admin password">
+        <button id="admin-login-btn">Login</button>
+    </div>
+
+    <!-- Messages Section -->
+    <div id="message-section" style="display: none;">
+        <h2>User Messages</h2>
+        <div id="messages-container"></div>
+        <button id="clear-btn">Clear All Messages</button>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>

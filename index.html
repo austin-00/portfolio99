@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alan Austin | Portfolio</title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <div id="header" style="background-image: url('1739258390807.png');">
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">Alan<span>Austin</span></a>
+                <div class="menu-icon" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul id="nav-menu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#research">Research</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-content">
+                <div class="header-text">
+                    <p>Web Developer & Designer</p>
+                    <h1>Hi, I'm <span>Alan Austin</span><br> from Bangladesh</h1>
+                    <a href="contact.html" class="cta-button">Get In Touch</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="1747648708937.png" alt="Alan Austin profile picture">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p class="about-text">Hi, I'm Alan Austin, a passionate Computer Science & Engineering (CSE) student with a strong drive for creativity and problem-solving. I specialize in web design and competitive coding, constantly exploring new technologies and sharpening my skills. Beyond the world of programming, I have a deep love for video and picture editing, photography, sketching, and playing the guitar. Whether it's crafting stunning visuals, designing sleek websites, or tackling complex coding challenges, I always aim for perfection.</p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experiance')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Skilled in designing and developing responsive websites using HTML, CSS, JavaScript, and modern frameworks.</li>
+                            <li><span>Competitive Programming</span><br>Experienced in problem-solving, algorithm design, and data structures. Proficient in platforms like Codeforces, LeetCode, and AtCoder.</li>
+                            <li><span>C++ Development</span><br>Strong foundation in C++, including STL, OOP, memory management, and optimization techniques.</li>
+                            <li><span>Creative Skills</span><br>Experienced in photography, videography, photo and video editing, sound mastering, and guitar playing.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="experiance">
+                        <ul>
+                            <li><span>2024 - Present</span><br>Freelance Web Developer</li>
+                            <li><span>2023 - 2024</span><br>Web Design Intern at CreativeTech Solutions</li>
+                            <li><span>2022 - 2023</span><br>Student Mentor at University Coding Club</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021 - Present</span><br>Bachelor in CSE - University of Global Village</li>
+                            <li><span>2019 - 2021</span><br>Higher Secondary Certificate - Excellence College</li>
+                            <li><span>2017 - 2019</span><br>Secondary School Certificate - Sunshine Academy</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">Services I Provide</h1>
+            <p class="section-desc">Professional services tailored to your needs. Click to learn more about each service.</p>
+            
+            <div class="services-list">
+                <div class="service">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Custom, responsive website development with modern technologies. I create intuitive interfaces that engage your audience and elevate your brand.</p>
+                    <a href="webdesign.html">Learn More <span class="arrow"></span></a>
+                </div>
+                
+                <div class="service">
+                    <i class="fa-solid fa-video"></i>
+                    <h2>Video Editing</h2>
+                    <p>Professional video editing services including color grading, transitions, effects, and sound synchronization for compelling visual storytelling.</p>
+                    <a href="video.html">Learn More <span class="arrow"></span></a>
+                </div>
+                
+                <div class="service">
+                    <i class="fa-solid fa-music"></i>
+                    <h2>Sound Mastering</h2>
+                    <p>Audio enhancement, mixing, and mastering services to perfect your sound. I balance levels, enhance clarity, and optimize for different platforms.</p>
+                    <a href="soundmas.html">Learn More <span class="arrow"></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="projects">
+        <div class="container">
+            <h1 class="subtitle">My Projects</h1>
+            <p class="section-desc">Recent work that showcases my skills and expertise. Each project represents my dedication to quality.</p>
+            
+            <div class="projects-list">
+                <div class="project">
+                    <div class="project-img">
+                        <img src="Screenshot 2025-02-07 201350.png" alt="E-Commerce Website">
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="project-tag">HTML/CSS</span>
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">PHP</span>
+                        </div>
+                        <h2>E-Commerce Website</h2>
+                        <p>A fully responsive e-commerce platform with secure payment integration, user accounts, and dynamic product catalog management.</p>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-eye"></i> View Demo</a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project">
+                    <div class="project-img">
+                        <img src="Screenshot 2025-02-11 195512.png" alt="Class Cloud">
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">Node.js</span>
+                            <span class="project-tag">MongoDB</span>
+                        </div>
+                        <h2>Class Cloud</h2>
+                        <p>An educational platform that connects students and teachers through virtual classrooms with real-time interaction capabilities.</p>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-eye"></i> View Demo</a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project">
+                    <div class="project-img">
+                        <img src="Screenshot 2025-02-11 195710.png" alt="Personal Portfolio">
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="project-tag">HTML/CSS</span>
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">UI/UX</span>
+                        </div>
+                        <h2>Personal Portfolio</h2>
+                        <p>A modern, responsive portfolio website showcasing my skills, projects, and services with smooth animations and intuitive navigation.</p>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-eye"></i> View Demo</a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="contact">
+        <div class="container">
+            <h1 class="subtitle">Contact Me</h1>
+            <p class="section-desc">Have a question or want to work together? Get in touch with me through the form below or social media.</p>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Let's Talk</h3>
+                    <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+                    
+                    <div class="contact-details">
+                        <div>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Barishal, Bangladesh</span>
+                        </div>
+                        <div>
+                            <i class="fas fa-envelope"></i>
+                            <span>austinalan666@gmail.com</span>
+                        </div>
+                        <div>
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+8801732915198</span>
+                        </div>
+                    </div>
+                    
+                    <div class="social-media">
+                        <h3>Follow Me</h3>
+                        <div class="social-icons">
+                            <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Enter your name" required>
+                        
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Enter your email" required>
+                        
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" placeholder="Enter subject" required>
+                        
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" placeholder="Enter your message" required></textarea>
+                        
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Alan<span>Austin</span></div>
+                
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="services.html">Services</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="#research">Research</a>
+                </div>
+                
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+                
+                <p class="copyright">&copy; 2025 Alan Austin. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <a href="#header" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+    
+    <script>
+        /**
+ * Main JavaScript for Alan Austin's Portfolio
+ * Handles tab switching, mobile menu, scroll effects, and form submission
+ */
+document.addEventListener("DOMContentLoaded", function() {
+    // Tab functionality
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname) {
+        // Remove active class from all tabs and contents
+        for (let tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (let tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        
+        // Add active class to clicked tab and corresponding content
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+    
+    // Make opentab function globally accessible
+    window.opentab = opentab;
+    
+    // Mobile menu toggle
+    function toggleMenu() {
+        document.getElementById("nav-menu").classList.toggle("show");
+        
+        // Optional: Close menu when clicking outside
+        if (document.getElementById("nav-menu").classList.contains("show")) {
+            document.addEventListener("click", closeMenuOutside);
+        } else {
+            document.removeEventListener("click", closeMenuOutside);
+        }
+    }
+    
+    function closeMenuOutside(event) {
+        const navMenu = document.getElementById("nav-menu");
+        const menuIcon = document.querySelector(".menu-icon");
+        
+        if (!navMenu.contains(event.target) && !menuIcon.contains(event.target)) {
+            navMenu.classList.remove("show");
+            document.removeEventListener("click", closeMenuOutside);
+        }
+    }
+    
+    // Close mobile menu when clicking on nav links
+    const navLinks = document.querySelectorAll("#nav-menu li a");
+    navLinks.forEach(link => {
+        link.addEventListener("click", function() {
+            document.getElementById("nav-menu").classList.remove("show");
+        });
+    });
+    
+    // Make toggleMenu function globally accessible
+    window.toggleMenu = toggleMenu;
+    
+    // Back to top button and scroll effects
+    window.addEventListener("scroll", function() {
+        var backToTopBtn = document.getElementById("backToTop");
+        if (backToTopBtn) {
+            if (window.pageYOffset > 300) {
+                backToTopBtn.classList.add("show");
+            } else {
+                backToTopBtn.classList.remove("show");
+            }
+        }
+        
+        // Navbar scroll effect
+        var navbar = document.querySelector("nav");
+        if (navbar) {
+            if (window.pageYOffset > 50) {
+                navbar.classList.add("scrolled");
+            } else {
+                navbar.classList.remove("scrolled");
+            }
+        }
+    });
+    
+    // Add smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            const targetId = this.getAttribute('href').substring(1);
+            if (targetId) {
+                const targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 70, // Offset for fixed navbar
+                        behavior: 'smooth'
+                    });
+                }
+            }
+        });
+    });
+    
+    // Add click handler for back to top button
+    const backToTopBtn = document.getElementById("backToTop");
+    if (backToTopBtn) {
+        backToTopBtn.addEventListener("click", function(e) {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    }
+    
+    // Add animation to elements when they scroll into view
+    function animateOnScroll() {
+        const elementsToAnimate = document.querySelectorAll('.service, .project, .about-col-1, .about-col-2, .contact-form, .contact-info');
+        
+        elementsToAnimate.forEach(element => {
+            const elementPosition = element.getBoundingClientRect().top;
+            const screenPosition = window.innerHeight / 1.3;
+            
+            if (elementPosition < screenPosition) {
+                element.style.opacity = '1';
+                element.style.transform = 'translateY(0)';
+            }
+        });
+    }
+    
+    // Apply initial styles for animation
+    const animatedElements = document.querySelectorAll('.service, .project, .about-col-1, .about-col-2, .contact-form, .contact-info');
+    animatedElements.forEach(element => {
+        element.style.opacity = '0';
+        element.style.transform = 'translateY(20px)';
+        element.style.transition = 'all 0.6s ease-out';
+    });
+    
+    // Run animation function on load and scroll
+    window.addEventListener('load', animateOnScroll);
+    window.addEventListener('scroll', animateOnScroll);
+    
+    // Handle contact form submission
+    const contactForm = document.getElementById("contactForm");
+    if (contactForm) {
+        contactForm.addEventListener("submit", function(event) {
+            event.preventDefault();
+            
+            // Basic form validation
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const subject = document.getElementById("subject").value;
+            const message = document.getElementById("message").value;
+            
+            if (!name || !email || !subject || !message) {
+                alert("Please fill in all fields");
+                return;
+            }
+            
+            // Email validation
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert("Please enter a valid email address");
+                return;
+            }
+            
+            // Here you would typically send the form data to your server
+            // For demonstration purposes, we'll just log to console
+            console.log("Form submitted", { name, email, subject, message });
+            
+            // Show success message
+            alert("Thank you for your message. I'll get back to you soon!");
+            contactForm.reset();
+        });
+    }
+});
+    </script>
+</body>
+</html>
