@@ -84,7 +84,138 @@ nav ul li a.active {
     border-radius: 8px;
     transition: background-color 0.3s ease;
 }
+#about {
+    padding: 80px 0;
+    background-color: #000; /* Optional dark background */
+    color: #fff;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.about-col-1 {
+    flex-basis: 35%;
+}
+
+.about-col-1 img {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+.about-col-2 {
+    flex-basis: 60%;
+}
+
+.subtitle {
+    font-size: 32px;
+    font-weight: bold;
+    color: crimson;
+    margin-bottom: 20px;
+}
+
+.about-text {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* === TABS === */
+.tab-titles {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.tab-links {
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    padding-bottom: 5px;
+    transition: all 0.3s ease;
+}
+
+.tab-links::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: crimson;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s;
+}
+
+.tab-links:hover::after,
+.tab-links.active-link::after {
+    width: 100%;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+
+.tab-contents ul {
+    padding-left: 20px;
+}
+
+.tab-contents ul li {
+    margin: 15px 0;
+    line-height: 1.6;
+}
+
+.tab-contents ul li span {
+    color: crimson;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* === RESPONSIVE DESIGN === */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .about-col-1,
+    .about-col-2 {
+        flex-basis: 100%;
+    }
+
+    .tab-titles {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .subtitle {
+        text-align: center;
+    }
+
+    .tab-links {
+        text-align: center;
+    }
+}
+
+
 
 .cta-button:hover {
     background-color: darkred;
 }
+
