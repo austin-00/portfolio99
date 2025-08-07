@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Alan Austin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="">
+    
+</head>
+<body>
+    <header id="header">
+    <nav id="navbar">
+        <div class="nav-container">
+            <h1 class="logo">Alan Austin</h1>
+            <a href="index.html" class="back-home">← Back To Home</a>
+        </div>
+    </nav>
+</header>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="1747648708937.png" alt="Alan Austin">
+            </div>
+            <div class="about-col-2">
+                <h1 class="subtitle">About Me</h1>
+                <p>
+                    Hi, I'm Alan Austin, a passionate Computer Science & Engineering (CSE) student with a strong drive for creativity and problem-solving. I specialize in web design and competitive coding, constantly exploring new technologies and sharpening my skills. Beyond the world of programming, I have a deep love for video and picture editing, photography, sketching, and playing the guitar. Whether it's crafting stunning visuals, designing sleek websites, or tackling complex coding challenges, I always aim for perfection.
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experiance')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web Development:</span><br>Skilled in designing and developing responsive websites using HTML, CSS, JavaScript, and modern frameworks.</li>
+                        <li><span>Competitive Programming:</span><br>Experienced in problem-solving, algorithm design, and data structures. Proficient in platforms like Codeforces, LeetCode, and AtCoder.</li>
+                        <li><span>C++ Development:</span><br>Strong foundation in C++, including STL, OOP, memory management, and optimization techniques.</li>
+                        <li><span>Creative Skills:</span><br>Experienced in photography, videography, photo and video editing, sound mastering, and guitar playing.</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="experiance">
+                    <ul>
+                        <li><span>Experience 1:</span><br>None</li>
+                        <li><span>Experience 2:</span><br>None</li>
+                        <li><span>Experience 3:</span><br>None</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Bachelor in CSE:</span><br>University of Global Village</li>
+                        <li><span>Masters:</span><br></li>
+                        <li><span></span><br></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    const tabLinks = document.querySelectorAll('.tab-links');
+    const tabContents = document.querySelectorAll('.tab-contents');
+
+    function opentab(tabName) {
+        tabLinks.forEach(link => link.classList.remove('active-link'));
+        tabContents.forEach(tab => tab.classList.remove('active-tab'));
+        event.currentTarget.classList.add('active-link');
+        document.getElementById(tabName).classList.add('active-tab');
+    }
+</script>
+
+</body>
+</html>
