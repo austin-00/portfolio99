@@ -6,7 +6,7 @@ body {
 }
 
 #header {
-    height: 100vh;
+    height: 100dvh;
     background-size: cover;
     background-position: center;
     color: white;
@@ -704,6 +704,7 @@ footer p.copyright {
     font-size: 0.95rem;
   }
 }
+
 
 
 
